@@ -1,0 +1,14 @@
+.gameBoard {
+  display: grid;
+  grid-template: 100px 100px 100px / 100px 100px 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gameBoard>div {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
