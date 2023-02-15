@@ -41,6 +41,14 @@ const gameBoardControl = (() => {
   function changeTurn() {
     turn === 1 ? (turn = 2) : (turn = 1);
   }
+
+  function getTurn() {
+    let viewTurn = turn;
+
+    return viewTurn;
+  }
+
+  return { putMarker, checkWin, getTurn, changeTurn };
 })();
 
 function Player(name, marker) {
